@@ -30,11 +30,14 @@ else()
 endif()
 string(SUBSTRING "${GIT_REV}" 0 7 GIT_SHORT_REV)
 
+# N-yoar Weeknumber Weekday
+string(TIMESTAMP DAY_VER "N-%y%U%w")
+
 # Generate cpp with Git revision from template
 # Also if this is a CI build, add the build name (ie: Nightly, Canary) to the scm_rev file as well
 set(REPO_NAME "")
 set(BUILD_VERSION "0")
-set(BUILD_FULLNAME "${GIT_SHORT_REV}")
+set(BUILD_FULLNAME "${DAY_VER}")
 if (DEFINED ENV{CI})
     if (DEFINED ENV{GITHUB_ACTIONS})
         set(BUILD_REPOSITORY $ENV{GITHUB_REPOSITORY})
