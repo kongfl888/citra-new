@@ -64,7 +64,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../src/citra_qt/aboutdialog.ui" line="134"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;&amp;quot;3DS&amp;quot; is a trademark of Nintendo. Citra is not affiliated with Nintendo in any way.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;“3DS”是任天堂的商标。Citra 与任天堂没有任何关系。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;“3DS”是任天堂的商标。Citra 与任天堂没有附属关系。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -814,7 +814,12 @@ Would you like to ignore the error and continue?</source>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_debug.ui" line="79"/>
         <source>Global Log Filter</source>
-        <translation>全局日志过滤器</translation>
+        <translation>日志全局过滤</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_debug.ui" line="93"/>
+        <source>Regex Log Filter</source>
+        <translation>日志正则过滤</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_debug.ui" line="93"/>
@@ -955,7 +960,7 @@ Would you like to ignore the error and continue?</source>
         <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="51"/>
         <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="176"/>
         <source>Enhancements</source>
-        <translation>增强性功能</translation>
+        <translation>功能增强</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="52"/>
@@ -1000,9 +1005,141 @@ Would you like to ignore the error and continue?</source>
         <translation>控制</translation>
     </message>
     <message>
+        <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="126"/>
+        <source>Layout</source>
+        <translation>布局</translation>
+    </message>
+    <message>
         <location filename="../../src/citra_qt/configuration/configure_dialog.cpp" line="177"/>
         <source>Advanced</source>
         <translation>高级选项</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigureLayout</name>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="314"/>
+        <source>Layout</source>
+        <translation>布局</translation>
+    </message>
+    <message>
+        <source>Screens</source>
+        <translation>屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="335"/>
+        <source>Screen Layout</source>
+        <translation>屏幕布局</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="343"/>
+        <source>Default</source>
+        <translation>默认</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="348"/>
+        <source>Single Screen</source>
+        <translation>单屏</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="353"/>
+        <source>Large Screen</source>
+        <translation>大屏</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="363"/>
+        <source>Separate Windows</source>
+        <translation>分离窗口</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="70"/>
+        <source>Side by Side</source>
+        <translation>横屏</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="368"/>
+        <source>Hybrid Screen</source>
+        <translation>混合式屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="189"/>
+        <source>Custom Layout</source>
+        <translation>自定义布局</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="379"/>
+        <source>Swap Screens</source>
+        <translation>交换上下屏</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="386"/>
+        <source>Rotate Screens Upright</source>
+        <translation>垂直式画面旋转</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="408"/>
+        <source>Large Screen Proportion:</source>
+        <translation>大屏比例：</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="125"/>
+        <source>Large Screen Proportion</source>
+        <translation>大屏比例</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="163"/>
+        <source>Background Color</source>
+        <translation>背景颜色</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="85"/>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="189"/>
+        <source>Custom Layout</source>
+        <translation>自定义布局</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="197"/>
+        <source>Top Screen</source>
+        <translation>上屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="280"/>
+        <source>Bottom Screen</source>
+        <translation>下屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="203"/>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="286"/>
+        <source>X Position</source>
+        <translation>X坐标</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="220"/>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="303"/>
+        <source>Y Position</source>
+        <translation>Y坐标</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="237"/>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="320"/>
+        <source>Width</source>
+        <translation>宽度</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="254"/>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="337"/>
+        <source>Height</source>
+        <translation>高度</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="361"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;NOTE: Values are in pixels starting from the top left corner of the display. Positive numbers only.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;注意：值以像素为单位，从显示器的左上角开始。仅限正数。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_layout.ui" line="372"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bottom Screen Opacity % (OpenGL Only)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;下屏透明 % （仅OpenGL）&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -1100,7 +1237,7 @@ Would you like to ignore the error and continue?</source>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="179"/>
         <source>Anime4K</source>
-        <translation>Anime4K</translation>
+        <translation>动漫4K</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="184"/>
@@ -1108,17 +1245,22 @@ Would you like to ignore the error and continue?</source>
         <translation>双三线过滤</translation>
     </message>
     <message>
-        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="189"/>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="194"/>
         <source>ScaleForce</source>
         <translation>强制缩放</translation>
     </message>
     <message>
-        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="194"/>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="189"/>
+        <source>Nearest Neighbor</source>
+        <translation>近邻取样</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="199"/>
         <source>xBRZ</source>
         <translation>xBRZ</translation>
     </message>
     <message>
-        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="199"/>
+        <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="200"/>
         <source>MMPX</source>
         <translation>MMPX</translation>
     </message>
@@ -1141,7 +1283,7 @@ Would you like to ignore the error and continue?</source>
         <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="234"/>
         <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="358"/>
         <source>Side by Side</source>
-        <translation>并排屏幕</translation>
+        <translation>横屏</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_enhancements.ui" line="239"/>
@@ -1511,22 +1653,22 @@ Would you like to ignore the error and continue?</source>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_graphics.ui" line="217"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Compile shaders using background threads to avoid shader compilation stutter. Expect temporary graphical glitches&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用后台线程编译着色器以减少卡顿。可能会出现短暂的图形问题&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用后台线程来编译着色器以减少卡顿。多线程可能会带来临时的图形问题&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_graphics.ui" line="220"/>
         <source>Enable Async Shader Compilation</source>
-        <translation>启用异步着色器编译</translation>
+        <translation>启用着色器的异步编译</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_graphics.ui" line="227"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Perform presentation on separate threads. Improves performance when using Vulkan in most games.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在单独的线程上执行着色器提交。提升大多数游戏使用 Vulkan 时的性能。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在分开的线程上,也就是多线程,处理着色器的显示操作。提升大多数游戏使用 Vulkan 时的性能。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_graphics.ui" line="230"/>
         <source>Enable Async Presentation</source>
-        <translation>启用异步着色器提交</translation>
+        <translation>启用着色器的异步显示</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_graphics.ui" line="240"/>
@@ -2213,6 +2355,11 @@ Would you like to ignore the error and continue?</source>
         <translation>功能增强</translation>
     </message>
     <message>
+        <location filename="../../src/citra_qt/configuration/configure_per_game.cpp" line="52"/>
+        <source>Layout</source>
+        <translation>布局</translation>
+    </message>
+    <message>
         <location filename="../../src/citra_qt/configuration/configure_per_game.cpp" line="50"/>
         <source>Graphics</source>
         <translation>图形</translation>
@@ -2337,6 +2484,11 @@ Would you like to ignore the error and continue?</source>
         <translation>使用 LLE 小程序 (若已安装)</translation>
     </message>
     <message>
+        <location filename="../../src/citra_qt/configuration/configure_system.ui" line="539"/>
+        <source>Real Console Unique Data</source>
+        <translation>真实的控制台唯一数据</translation>
+    </message>
+    <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="55"/>
         <source>Username</source>
         <translation>用户名</translation>
@@ -2449,7 +2601,7 @@ Would you like to ignore the error and continue?</source>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="181"/>
         <source>Simplified Chinese (简体中文)</source>
-        <translation>简体中文 (简体中文)</translation>
+        <translation>中文(简体中文)</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="186"/>
@@ -2474,7 +2626,7 @@ Would you like to ignore the error and continue?</source>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="206"/>
         <source>Traditional Chinese (正體中文)</source>
-        <translation>繁体中文 (正體中文)</translation>
+        <translation>繁体中文(正體中文)</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="214"/>
@@ -2655,6 +2807,13 @@ Would you like to ignore the error and continue?</source>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="499"/>
         <source>Download</source>
         <translation>下载</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_system.ui" line="571"/>
+        <location filename="../../src/citra_qt/configuration/configure_system.ui" line="607"/>
+        <location filename="../../src/citra_qt/configuration/configure_system.ui" line="643"/>
+        <source>Choose</source>
+        <translation>选择</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/configuration/configure_system.ui" line="512"/>
@@ -3378,6 +3537,13 @@ Would you like to ignore the error and continue?</source>
         <source>Successfully downloaded system files.</source>
         <translation>系统文件已下载成功。</translation>
     </message>
+    <message>
+        <location filename="../../src/citra_qt/configuration/configure_system.cpp" line="601"/>
+        <location filename="../../src/citra_qt/configuration/configure_system.cpp" line="603"/>
+        <location filename="../../src/citra_qt/configuration/configure_system.cpp" line="605"/>
+        <source>Status: </source>
+        <translation>状态：</translation>
+    </message>
 </context>
 <context>
     <name>ConfigureTouchFromButton</name>
@@ -3669,7 +3835,7 @@ Drag points to change position, or double-click table cells to edit values.</sou
     <message>
         <location filename="../../src/citra_qt/dumping/dumping_dialog.ui" line="14"/>
         <source>Dump Video</source>
-        <translation>转储屏幕录像</translation>
+        <translation>视频转录</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/dumping/dumping_dialog.ui" line="20"/>
@@ -4009,6 +4175,36 @@ Refer to the log for details.</source>
         <translation>加载多个文件</translation>
     </message>
     <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1797"/>
+        <source>Connect to Artic Base</source>
+        <translation>连接到 Artic Base</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1798"/>
+        <source>Enter Artic Base server address:</source>
+        <translation>输入 Artic Base 服务器地址：</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1215"/>
+        <source>Enter Artic Base Server</source>
+        <translation>Artic Base 服务器</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1216"/>
+        <source>An error has occurred whilst communicating with the Artic Base Server.</source>
+        <translation>与Artic Base服务器通信时出错。</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1220"/>
+        <source>Error while loading ROM!</source>
+        <translation>加载ROM时出错！</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.cpp" line="1221"/>
+        <source>An unknown error occurred. Please see the log for more details.</source>
+        <translation>出现未知错误。有关详细信息，请参阅日志。</translation>
+    </message>
+    <message>
         <location filename="../../src/citra_qt/main.cpp" line="1771"/>
         <source>3DS Installation File (*.CIA*)</source>
         <translation>3DS 安装文件 (*.CIA*)</translation>
@@ -4227,7 +4423,7 @@ To view a guide on how to install FFmpeg, press Help.</source>
     <message>
         <location filename="../../src/citra_qt/main.cpp" line="2532"/>
         <source>Could not start video dumping.&lt;br&gt;Refer to the log for details.</source>
-        <translation>无法转储屏幕录像。&lt;br&gt;有关详细信息，请参考日志文件。</translation>
+        <translation>无法录制视频文件。&lt;br&gt;有关详细信息，请参考日志文件。</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.cpp" line="2578"/>
@@ -5573,7 +5769,7 @@ Debug Message: </source>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="174"/>
         <source>Movie</source>
-        <translation>影像</translation>
+        <translation>TAS录像</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="185"/>
@@ -5594,6 +5790,11 @@ Debug Message: </source>
         <location filename="../../src/citra_qt/main.ui" line="222"/>
         <source>Install CIA...</source>
         <translation>安装 CIA…</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.ui" line="230"/>
+        <source>Connect to Artic Base...</source>
+        <translation>连接到 Artic Base…</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="227"/>
@@ -5654,6 +5855,11 @@ Debug Message: </source>
         <location filename="../../src/citra_qt/main.ui" line="294"/>
         <source>Load</source>
         <translation>读取</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.ui" line="486"/>
+        <source>Open Log Folder</source>
+        <translation>打开日志文件夹</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="299"/>
@@ -5748,7 +5954,7 @@ Debug Message: </source>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="428"/>
         <source>Dump Video</source>
-        <translation>转储屏幕录像</translation>
+        <translation>视频转录</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="436"/>
@@ -5768,7 +5974,7 @@ Debug Message: </source>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="457"/>
         <source>Direct Connect to Room</source>
-        <translation>直接连接到房间</translation>
+        <translation>直接连接到房间√</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="465"/>
@@ -5809,6 +6015,11 @@ Debug Message: </source>
         <location filename="../../src/citra_qt/main.ui" line="513"/>
         <source>Hybrid Screen</source>
         <translation>混合式屏幕</translation>
+    </message>
+    <message>
+        <location filename="../../src/citra_qt/main.ui" line="513"/>
+        <source>Custom Layout</source>
+        <translation>自定义布局</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="521"/>
@@ -5858,7 +6069,7 @@ Debug Message: </source>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="590"/>
         <source>Open Citra Folder</source>
-        <translation>打开 Citra 文件夹</translation>
+        <translation>打开 Citra 用户文件夹</translation>
     </message>
     <message>
         <location filename="../../src/citra_qt/main.ui" line="598"/>
