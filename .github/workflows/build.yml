@@ -50,6 +50,8 @@ jobs:
       - name: Build
         run: ./.ci/linux.sh
       - name: Pack
+        env:
+          SKIP_7Z: 1
         run: ./.ci/pack.sh
         if: ${{ matrix.target == 'appimage' }}
       - name: Upload
@@ -116,6 +118,8 @@ jobs:
         env:
           ARTIFACTS: ${{ env.OS }}-x86_64 ${{ env.OS }}-arm64
       - name: Pack
+        env:
+          SKIP_7Z: 1
         run: ./.ci/pack.sh
       - name: Upload
         uses: actions/upload-artifact@v4
@@ -214,15 +218,20 @@ jobs:
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
       - name: Pack
-        run: ../../../.ci/pack.sh
-        working-directory: src/android/app
         env:
           UNPACKED: 1
-      - name: Upload
+        run: ../../../.ci/pack.sh
+        working-directory: src/android/app
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.OS }}-${{ env.TARGET }}
-          path: src/android/app/artifacts/
+          name: ${{ env.OS }}-${{ env.TARGET }}-APK
+          path: src/android/app/artifacts/*.apk
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.OS }}-${{ env.TARGET }}-AAB
+          path: src/android/app/artifacts/*.aab
   ios:
     runs-on: macos-14
     if: ${{ !startsWith(github.ref, 'refs/tags/') }}
