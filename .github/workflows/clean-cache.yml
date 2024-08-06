@@ -1,12 +1,7 @@
 name: Clear cache
 
 on:
-  push:
-    paths:
-      - '.github/workflows/clean-cache.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '6 6 * * 6'
 
 permissions:
   actions: write
